@@ -50,8 +50,12 @@ client.on("message", message => {
       !config.negativeKeywords.some(keyword =>
         url.toLowerCase().includes(keyword.toLowerCase())
       )
-    )
+    ) {
+      logger.info(`Opening ${url}`);
       open(url);
+    } else {
+      logger.info(`${url} not in keywords or is in negative keywords`);
+    }
   });
 });
 
