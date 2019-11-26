@@ -48,7 +48,7 @@ client.on("message", message => {
         url.toLowerCase().includes(keyword.toLowerCase())
       ) &&
       !config.negativeKeywords.some(
-        keyword => !url.toLowerCase().includes(keyword.toLowerCase())
+        keyword => keyword && url.toLowerCase().includes(keyword.toLowerCase())
       )
     ) {
       logger.info(`Opening ${url}`);
