@@ -1,6 +1,6 @@
 # discord-link-opener
 
-Automatically open link(s) based on keywords & negative keywords.
+Automatically open link(s) in your default browser based on keywords & negative keywords.
 
 ## Instructions
 
