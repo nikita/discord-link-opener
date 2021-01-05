@@ -3,7 +3,7 @@ require("dotenv").config();
 const open = require("open");
 const winston = require("winston");
 const discord = require("discord.js");
-const client = new discord.Client();
+const client = new discord.Client({ _tokenType: "User" });
 const config = require("./config.json");
 
 const logger = winston.createLogger({
@@ -39,6 +39,8 @@ client.on("ready", () => {
 });
 
 client.on("message", message => {
+  if (config.channelIds && config.channelIds.length > 0 && !config.channelIds.includes(message.channel.id)) return;
+
   const urls = new Set(matchUrls(message.content));
   if (urls.length == 0) return;
 

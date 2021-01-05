@@ -1,4 +1,10 @@
 {
-  "keywords": ["site1", "site2"],
-  "negativeKeywords": ["site3"]
+  "keywords": [
+    "site1",
+    "site2"
+  ],
+  "negativeKeywords": [
+    "site3"
+  ],
+  "channelIds": []
 }

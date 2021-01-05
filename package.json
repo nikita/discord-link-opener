@@ -1,6 +1,6 @@
 {
   "name": "discord-link-opener",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,9 +10,9 @@
   "author": "никита",
   "license": "MIT",
   "dependencies": {
-    "discord.js": "^11.5.1",
+    "discord.js": "https://github.com/nikita/discord.js",
     "dotenv": "^8.2.0",
-    "open": "^7.0.0",
-    "winston": "^3.2.1"
+    "open": "^7.3.0",
+    "winston": "^3.3.3"
   }
 }
